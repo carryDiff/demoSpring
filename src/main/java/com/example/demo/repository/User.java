@@ -54,7 +54,7 @@ public class User {
         this.email = email;
     }
 
-    public LocalDate getBithday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 

@@ -28,7 +28,7 @@ public class UserService {
             throw new IllegalStateException("user с таких email уже есть!");
         }
 
-        user.setAge(Period.between(user.getBithday(), LocalDate.now()).getYears());
+        user.setAge(Period.between(user.getBirthday(), LocalDate.now()).getYears());
 
         return userRepository.save(user);
     }
